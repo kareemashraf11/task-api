@@ -1,0 +1,26 @@
+# Core FastAPI framework
+fastapi==0.111.0
+# FastAPI needs an ASGI server to run - Uvicorn is the recommended choice
+uvicorn[standard]==0.30.1
+
+# SQLModel combines SQLAlchemy with Pydantic
+# It provides both ORM functionality and data validation
+sqlmodel==0.0.19
+
+# Pydantic v2 for data validation
+# SQLModel depends on this, but we specify it explicitly
+pydantic==2.7.4
+pydantic-settings==2.3.3
+
+# Email validation support for Pydantic
+email-validator==2.2.0
+
+# Python-multipart is required for form data parsing
+python-multipart==0.0.9
+
+# Development dependencies (optional but helpful)
+# HTTPie for testing API endpoints from command line
+httpie==3.2.2
+
+# Python-dotenv for environment variable management
+python-dotenv==1.0.1
